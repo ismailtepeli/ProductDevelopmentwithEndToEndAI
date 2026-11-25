@@ -1,0 +1,14 @@
+# Personal and client data - never commit
+agency-profile.md
+clients/
+.env
+.env.*
+!.env.example
+
+# Local Claude settings
+.claude/settings.local.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
