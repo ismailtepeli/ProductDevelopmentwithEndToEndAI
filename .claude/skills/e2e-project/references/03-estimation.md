@@ -58,6 +58,8 @@ Client wait time: add 3–5 working days per approval point (K1) and per content
 
 If the client's budget (J1) is below **Low**: don't discount silently. Offer the operator a phased plan: Phase 1 = MVP that meets B2, Phase 2 = the rest. Show which items moved.
 
+If the budget is **above Expected**: say so and let the operator choose — quote the cost-based price, price on value inside the client's range (state the effective hourly rate), or keep the cost price and list optional paid add-ons. Never silently raise the price.
+
 ## Launch checklist (Phase 8)
 
 - [ ] Lighthouse mobile: Performance ≥ 90, Accessibility ≥ 95, Best Practices ≥ 95, SEO ≥ 95

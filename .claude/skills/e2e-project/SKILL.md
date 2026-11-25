@@ -65,9 +65,22 @@ Write `03-estimate.md`, and fill `templates/proposal.md` into `clients/<slug>/pr
 
 **Checkpoint:** "Is this price right for this client and market?" The operator decides the final figure.
 
+## Phase 4b — Design research (Pinterest)
+
+Before any mockup, follow `references/08-design-research.md`: search Pinterest for the client's sector and feel-words in the browser pane, build a moodboard page in `clients/<slug>/research/`, and write `design-direction.md` listing the patterns you will and won't use. Show both to the operator and ask "Is this the direction you want for this client?" before building. Pins are inspiration only; nothing is copied.
+
 ## Phase 5 — Mockup
 
-Build a static HTML mockup of the home page (plus one inner page if useful) in `clients/<slug>/mockup/`, using the **client's** colors, fonts, logo and reference sites from the brief — not the operator's brand. Load the `frontend-design` skill first if it is available. Use real copy from the brief where you have it; otherwise mark placeholders clearly. Show it to the operator (browser pane or a private artifact) and ask:
+Build a **high-fidelity, interactive** HTML mockup of the home page (plus one inner page if useful) in `clients/<slug>/mockup/`, using the **client's** colors, fonts, logo and reference sites from the brief — not the operator's brand. Load the `frontend-design` skill first if it is available.
+
+The bar for the first version the operator sees (a mockup made of flat color boxes and "[image]" labels was rejected in testing as amateur):
+- **Real imagery.** Use the client's own photos/videos when the brief has them. Otherwise use free-licensed stock that fits each section's subject (e.g. Unsplash photos via `https://picsum.photos/id/<id>/<w>/<h>`): build a contact sheet first, look at it, and pick images that match each project. Never ship an empty colored box as an image.
+- **Motion and video where the client sells it** (studios, hospitality, products): a moving hero (crossfading stills or the client's reel), a showreel modal, video badges on cards.
+- **Working UX, not pictures of UX:** navigation with a working mobile menu, filters, tabs, hover states, the main conversion flow (e.g. a step-by-step enquiry form with validation), language switch if multilingual.
+- **Full page story:** hero, proof (work/clients/testimonials), services, process, conversion section, footer. Mark sample facts (numbers, quotes) as "sample content — client to confirm".
+- **Self-check before showing it:** screenshots at 1440 px and 375 px, no horizontal scroll, no broken images, every interaction clicked once, keyboard focus visible, contrast checked (a brand color that fails as text becomes a background with dark text on it).
+
+Use real copy from the brief where you have it. Show it to the operator (browser pane or a private artifact) and ask:
 - "How does this look from a human perspective — does it feel like *this* client?"
 - What to change: color, density, imagery, tone.
 Iterate until the operator approves. Save the approved version as `mockup/v<N>-approved.html`.
@@ -114,3 +127,4 @@ clients/<slug>/
 - `references/05-model-guide.md` — which model for what, on a Claude Pro plan
 - `references/06-prompt-templates.md` — prompt format and examples
 - `references/07-git-setup.md` — Git host questions and commands
+- `references/08-design-research.md` — Pinterest moodboard and design direction before every mockup
